@@ -1,0 +1,94 @@
+A variable
+A variable is a “named storage” for data. We can use variables to store goodies, visitors, and other data.
+To create a variable in JavaScript, use the let keyword.
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+We can also declare multiple variables in one line:
+let user = 'John', age = 25, message = 'Hello';
+That might seem shorter, but we don’t recommend it. For the sake of better readability, please use a single line per variable.
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+The multiline variant is a bit longer, but easier to read:
+let user = 'John';
+let age = 25;
+let message = 'Hello';
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+Some people also define multiple variables in this multiline style:
+
+let user = 'John',
+  age = 25,
+  message = 'Hello';
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+…Or even in the “comma-first” style:
+
+let user = 'John'
+  , age = 25
+  , message = 'Hello';
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+var instead of let
+
+In older scripts, you may also find another keyword: var instead of let:
+var message = 'Hello';
+
+The var keyword is almost the same as let. It also declares a variable, but in a slightly different, “old-school” way.
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+Declaring twice triggers an error
+
+A variable should be declared only once.
+A repeated declaration of the same variable is an error:
+
+let message = "This"; // repeated 'let' leads to an error
+let message = "That"; // SyntaxError: 'message' has already been declared
+
+So, we should declare a variable once and then refer to it without let.
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+Variable naming
+
+There are two limitations on variable names in JavaScript:
+
+The name must contain only letters, digits, or the symbols $ and _.
+The first character must not be a digit.
+
+Examples of valid names:
+
+let userName;
+let test123;
+
+When the name contains multiple words, camelCase is commonly used. That is: words go one after another, each word except first starting with a capital letter: myVeryLongName.
+
+What’s interesting – the dollar sign '$' and the underscore '_' can also be used in names. They are regular symbols, just like letters, without any special meaning.
+
+These names are valid:
+
+let $ = 1; // declared a variable with the name "$"
+let _ = 2; // and now a variable with the name "_"
+
+alert($ + _); // 3
+
+Examples of incorrect variable names:
+
+let 1a; // cannot start with a digit
+
+let my-name; // hyphens '-' aren't allowed in the name
+Case matters
+Variables named apple and APPLE are two different variables.
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+Constants
+
+To declare a constant (unchanging) variable, use const instead of let:
+
+const myBirthday = '18.04.1982';
+Variables declared using const are called “constants”. They cannot be reassigned. An attempt to do so would cause an error:
+
+const myBirthday = '18.04.1982';
+
+myBirthday = '01.01.2001'; // error, can't reassign the constant!
+When a programmer is sure that a variable will never change, they can declare it with const to guarantee and clearly communicate that fact to everyone.
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````

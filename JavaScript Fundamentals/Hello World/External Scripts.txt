@@ -1,0 +1,32 @@
+If we have a lot of JavaScript code, we can put it into a separate file.
+
+Script files are attached to HTML with the src attribute:
+
+<script src="/path/to/script.js"></script>
+
+To attach several scripts, use multiple tags:
+
+<script src="/js/script1.js"></script>
+<script src="/js/script2.js"></script>
+<script src="/js/script3.js"></script>
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+The src attribute supports two types of paths:
+
+Absolute URLs like <script src="http://example.com/path/to/script.js"></script>.
+Relative URLs like <script src="/path/to/script.js"></script>.
+Relative URLs are better, because they work on any website, not just the one they are hosted on.
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+Please note:
+
+As a rule, only the simplest scripts are put into HTML. More complex ones reside in separate files.
+The benefit of a separate file is that the browser will download it and store it in its cache.
+Other pages that reference the same script will take it from the cache instead of downloading it, so the file is actually downloaded only once.
+That reduces traffic and makes pages faster.
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+Summary
+We can use a <script> tag to add JavaScript code to a page.
+The type and language attributes are not required.
+A script in an external file can be inserted with <script src="path/to/script.js"></script>.
