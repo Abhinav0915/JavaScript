@@ -1,0 +1,77 @@
+Basic operators, maths
+
+We know many operators from school. They are things like addition +, multiplication *, subtraction -, and so on.
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+Terms: “unary”, “binary”, “operand”
+
+Before we move on, let’s grasp some common terminology.
+
+An operand – is what operators are applied to. For instance, in the multiplication of 5 * 2 there are two operands: the left operand is 5 and the right operand is 2. Sometimes, people call these “arguments” instead of “operands”.
+An operator is unary if it has a single operand. For example, the unary negation - reverses the sign of a number:
+
+let x = 1;
+x = -x;
+alert( x ); // -1, unary negation was applied
+
+An operator is binary if it has two operands. The same minus exists in binary form as well:
+
+let x = 1, y = 3;
+alert( y - x ); // 2, binary minus subtracts values
+
+Formally, in the examples above we have two different operators that share the same symbol: the negation operator, a unary operator that reverses the sign, and the subtraction operator, a binary operator that subtracts one number from another.
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+Maths
+
+The following math operations are supported:
+
+Addition +, ------------ (note the case of the letter "A")
+Subtraction -, --------- (note the case of the letter "S")
+Multiplication *, ------ (note the case of the letter "M")
+Division /, ------------ (division always returns a floating point number)
+Remainder %, ----------- (remainder of the division)
+Exponentiation **. ------ (a ** b) raises a to the power of b. In some languages it is written as ^ or pow
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+String concatenation with binary +
+
+Let’s meet the features of JavaScript operators that are beyond school arithmetics.
+Usually, the plus operator + sums numbers.
+
+But, if the binary + is applied to strings, it merges (concatenates) them:
+
+let s = "my" + "string";
+alert(s); // mystring
+Note that if any of the operands is a string, then the other one is converted to a string too.
+
+For example:
+
+alert( '1' + 2 ); // "12"
+alert( 2 + '1' ); // "21"
+
+See, it doesn’t matter whether the first operand is a string or the second one.
+
+Here’s a more complex example:
+
+alert(2 + 2 + '1' ); // "41" and not "221"
+Here, operators work one after another. The first + sums two numbers, so it returns 4, then the next + adds the string 1 to it, so it’s like 4 + '1' = '41'.
+
+alert('1' + 2 + 2); // "122" and not "14"
+Here, the first operand is a string, the compiler treats the other two operands as strings too. The 2 gets concatenated to '1', so it’s like '1' + 2 = "12" and "12" + 2 = "122"
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+Bitwise operators
+
+Bitwise operators treat arguments as 32-bit integer numbers and work on the level of their binary representation.
+These operators are not JavaScript-specific. They are supported in most programming languages.
+
+The list of operators:
+
+AND ( & )
+OR ( | )
+XOR ( ^ )
+NOT ( ~ )
+LEFT SHIFT ( << )
+RIGHT SHIFT ( >> )
+ZERO-FILL RIGHT SHIFT ( >>> )
