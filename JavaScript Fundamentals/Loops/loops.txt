@@ -1,0 +1,27 @@
+The “while” loop
+
+The while loop has the following syntax:
+
+while (condition) {
+  // code
+  // so-called "loop body"
+}
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+The “do…while” loop
+The condition check can be moved below the loop body using the do..while syntax:
+
+do {
+  // loop body
+} while (condition);
+The loop will first execute the body, then check the condition, and, while it’s truthy, execute it again and again.
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+The “for” loop
+The for loop is more complex, but it’s also the most commonly used loop.
+
+It looks like this:
+
+for (begin; condition; step) {
+  // ... loop body ...
+}

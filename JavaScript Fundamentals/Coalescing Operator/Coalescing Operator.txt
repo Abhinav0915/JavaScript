@@ -1,0 +1,13 @@
+Coalescing Operator
+
+The nullish coalescing operator is written as two question marks ??.
+As it treats null and undefined similarly, we’ll use a special term here, in this article. For brevity, we’ll say that a value is “defined” when it’s neither null nor undefined.
+
+The result of a ?? b is:
+
+if a is defined, then a,
+if a isn’t defined, then b.
+
+In other words, ?? returns the first argument if it’s not null/undefined. Otherwise, the second one.
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
