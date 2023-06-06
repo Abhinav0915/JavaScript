@@ -3,6 +3,16 @@ JavaScript Methods:
 getElementById() :
 
 The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript":
+
 document.getElementById("demo").innerHTML = "Hello JavaScript";
 
 ```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+JavaScript Print:
+
+JavaScript does not have any print object or print methods.You cannot access output devices from JavaScript.
+The only exception is that you can call the window.print() method in the browser to print the content of the current window.
+
+<button onclick="window.print()">Print this page</button>
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+

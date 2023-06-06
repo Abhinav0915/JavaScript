@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <script src="index.js"></script>
+
+    <h1>Guess The Number!</h1>
+
+    <p id="desc">Guess a number between the range 1 to 100 in just 5 chances to check out your guessing game :) </p>
+
+    <div id="text">
+        Enter The number: 
+        <input type="text" placeholder="Guess A number" id="number" required>
+        <button onclick="guessNumber()">Guess It!</button>
+    </div>
+
+    <p id="result"></p>
+    
+    <button onclick="hints()">Click for Hint</button>
+
+    <p id="display_hint"></p>
+
+    
+</body>
+</html>
