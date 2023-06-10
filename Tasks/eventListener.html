@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+    <style>
+        #container{
+            width: 100%;
+            height: 150px ;
+            background-color: orange;
+        }
+        .inner-container{
+            position: absolute;
+            top: 40px;
+            left: 25px;
+            width: 95%;
+            height: 80px;
+            background-color: grey;
+            text-align: center;
+        }
+        .inner-container:hover{
+            background-color: green;
+        } 
+    
+    </style>
+</head>
+<body>
+   
+    <div id="container">
+        <div class="inner-container">
+            <p id="demo">Click Me!</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById("container").addEventListener("click", function(){
+            alert("Now Get lost! BOOOOOOOOOOO");
+        });
+        document.getElementById("demo").addEventListener("click", function(){
+            alert("Now Get lost! BOOOOOOOOOOO");
+        });
+    </script>
+</body>
+</html>
